@@ -30,7 +30,7 @@
       }
     },
     methods: {
-      onLogou: function() {
+      onLogout: function() {
         this.$store.dispatch('logout');
       }
     }
