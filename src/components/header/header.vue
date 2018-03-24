@@ -6,13 +6,13 @@
     <nav>
       <ul>
         <li v-if="!auth">
-          <router-link to="/amispourlavie/signup">Sign Up</router-link>
+          <router-link to="/signup">Sign Up</router-link>
         </li>
         <li v-if="!auth">
-          <router-link to="/amispourlavie/signin">Sign In</router-link>
+          <router-link to="/signin">Sign In</router-link>
         </li>
         <li v-if="auth">
-          <router-link to="/amispourlavie/dashboard">Dashboard</router-link>
+          <router-link to="/dashboard">Dashboard</router-link>
         </li>
         <li v-if="auth">
           <button @click="onLogout" class="logout">Logout</button>
