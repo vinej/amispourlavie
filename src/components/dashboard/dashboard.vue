@@ -7,7 +7,7 @@
           <input name="search"/>
       </div>
       <div class="right">
-        <img src="http://lorempixel.com/400/200/animals"/>
+        <img src="https://lorempixel.com/400/200/animals"/>
       </div>
   </div>
   <hr>

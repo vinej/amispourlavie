@@ -9,6 +9,7 @@ import SigninPage from './components/auth/signin.vue'
 Vue.use(VueRouter)
 
 const routes = [
+  { path: '/', component: WelcomePage },
   { path: '/amispourlavie', component: WelcomePage },
   { path: '/amispourlavie/signup', component: SignupPage },
   { path: '/amispourlavie/signin', component: SigninPage },
@@ -19,7 +20,7 @@ const routes = [
       if (store.state.idToken) {
         next()
       } else {
-        next('/signin')
+        next('/amispourlavie/signin')
       }
     }
   }
