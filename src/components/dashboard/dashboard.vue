@@ -1,30 +1,12 @@
 <template>
-<nav id="dashboard">
-  <div class="grid-2">
-      <div class="center">
-          <h1>Amis pour la vie</h1>
-          <label for="search">Rechercher: </label>
-          <input name="search"/>
-      </div>
-      <div class="right">
-        <img src="https://lorempixel.com/400/200/animals"/>
-      </div>
-  </div>
+<div style="margin:10px">
+  <img src="
+  chien-japonais.jpg" height="200" width="300"/>
+  <h1>Amis pour la vie</h1>
+  <label for="search">Rechercher: </label>
+  <input name="search"/>
   <hr>
-</nav>
+</div>
 </template>
 
-<script  lang="ts">
-  import axios from 'axios';
 
-  export default {
-    computed: {
-      email: function() {
-        return !this.$store.getters.user ? false : this.$store.getters.user.email;
-      }
-    },
-    created: function() {
-      this.$store.dispatch('fetchUser');
-    }
-  }
-</script>

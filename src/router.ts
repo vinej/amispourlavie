@@ -13,14 +13,14 @@ const routes = [
   { path: '/signup', component: SignupPage },
   { path: '/signin', component: SigninPage },
   {
-    path: '/dashboard', component: DashboardPage
-    //beforeEnter: function(to, from, next) {
-    //  if (store.state.idToken) {
-    //    next();
-    //  } else {
-    //    next('/signin');
-    //  }
-    //}
+    path: '/dashboard', component: DashboardPage,
+    beforeEnter: function(to, from, next) {
+      if (store.state.idToken) {
+        next();
+      } else {
+        next('/signin');
+      }
+    }
   }
 ];
 

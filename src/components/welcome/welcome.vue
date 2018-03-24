@@ -1,11 +1,10 @@
 <template>
-  <div id="welcome">
-    <h1>Amis pour la Vie</h1>
-    <p>Votre chance d'adopter un animal de compagnie</p>
-    <div class="cta">
-      <router-link to="/signup">Sign Up</router-link>
-      <router-link to="/signin">Sign In</router-link>
-    </div>
-  </div>
+<div style="margin:10px">
+  <img src="docs/chien-japonais.jpg" height="200" width="300"/>
+  <h1>Amis pour la vie</h1>
+  <label for="search">Rechercher: </label>
+  <input name="search"/>
+  <hr>
+</div>
 </template>
 
