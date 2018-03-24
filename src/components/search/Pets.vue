@@ -1,32 +1,38 @@
 <template>
-<div>
-    <section class="grid-2-small-1 has-gutter pets-panel mbs" v-for="n in 2" :key="n">
+<div class="pure-g">
+    <div v-for="n in 2" :key="n" class="card pure-u-1">
         <div>
-            <h3>Name: Alfred</h3>
-            <h5>Race: Chat allemand</h5>
-            <h5>Age: 4 ans</h5>
-            <h5>Prix: 2000$</h5>
-            <h5>Desc: Amical qui aime les enfants. Aime sortir dehors tous les jours</h5>
-            <button class="btn--success">Adopter</button>
+            <div>Name: Alfred</div>
+            <div>Race: Chat allemand</div>
+            <div>Age: 4 ans</div>
+            <div>Prix: 2000$</div>
+            <div>Desc: Amical qui aime les enfants. Aime sortir dehors tous les jours</div>
+            <button class="button-success">Adopter</button>
         </div>
-        <div class="left mls ">
-            <img src="http://lorempixel.com/400/300/cats"/>
+        <br>
+        <div>
+            <img src="http://lorempixel.com/300/300/cats"/>
         </div>
-    </section>
+    </div>
 </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-
 export default Vue.extend({
+
 });
 </script>
 
 <style>
-.pets-panel {
-    background-color: lightyellow;
-    border: 1px solid lightgray;
-}
+ .card {
+     padding: 1rem;
+     background-color:seashell;
+     margin: 1rem;
+     border-style: solid;
+     border: skyblue;
+ }
 </style>
+
+
 

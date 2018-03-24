@@ -46,6 +46,7 @@
     align-items: center;
     background-color:firebrick;
     padding: 0 20px;
+    font-size: 20pt;
   }
 
   .logo {
