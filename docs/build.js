@@ -16747,15 +16747,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Amis pour la Vie")])], 1), _vm._v(" "), _c('nav', [_c('ul', [(!_vm.auth) ? _c('li', [_c('router-link', {
     attrs: {
-      "to": "/amispourlavie/signup"
+      "to": "/signup"
     }
   }, [_vm._v("Sign Up")])], 1) : _vm._e(), _vm._v(" "), (!_vm.auth) ? _c('li', [_c('router-link', {
     attrs: {
-      "to": "/amispourlavie/signin"
+      "to": "/signin"
     }
   }, [_vm._v("Sign In")])], 1) : _vm._e(), _vm._v(" "), (_vm.auth) ? _c('li', [_c('router-link', {
     attrs: {
-      "to": "/amispourlavie/dashboard"
+      "to": "/dashboard"
     }
   }, [_vm._v("Dashboard")])], 1) : _vm._e(), _vm._v(" "), (_vm.auth) ? _c('li', [_c('button', {
     staticClass: "logout",
