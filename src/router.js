@@ -10,11 +10,10 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/', component: WelcomePage },
-  { path: '/amispourlavie', component: WelcomePage },
-  { path: '/amispourlavie/signup', component: SignupPage },
-  { path: '/amispourlavie/signin', component: SigninPage },
+  { path: '/signup', component: SignupPage },
+  { path: '/signin', component: SigninPage },
   {
-    path: '/amispourlavie/dashboard',
+    path: '/dashboard',
     component: DashboardPage,
     beforeEnter (to, from, next) {
       if (store.state.idToken) {
