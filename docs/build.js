@@ -15758,11 +15758,10 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 
 const routes = [
   { path: '/', component: __WEBPACK_IMPORTED_MODULE_3__components_welcome_welcome_vue___default.a },
-  { path: '/amispourlavie', component: __WEBPACK_IMPORTED_MODULE_3__components_welcome_welcome_vue___default.a },
-  { path: '/amispourlavie/signup', component: __WEBPACK_IMPORTED_MODULE_5__components_auth_signup_vue___default.a },
-  { path: '/amispourlavie/signin', component: __WEBPACK_IMPORTED_MODULE_6__components_auth_signin_vue___default.a },
+  { path: '/signup', component: __WEBPACK_IMPORTED_MODULE_5__components_auth_signup_vue___default.a },
+  { path: '/signin', component: __WEBPACK_IMPORTED_MODULE_6__components_auth_signin_vue___default.a },
   {
-    path: '/amispourlavie/dashboard',
+    path: '/dashboard',
     component: __WEBPACK_IMPORTED_MODULE_4__components_dashboard_dashboard_vue___default.a,
     beforeEnter (to, from, next) {
       if (__WEBPACK_IMPORTED_MODULE_2__store__["a" /* default */].state.idToken) {
@@ -15849,7 +15848,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
           localStorage.setItem('expirationDate', expirationDate)
           dispatch('storeUser', authData)
           dispatch('setLogoutTimer', res.data.expiresIn)
-          __WEBPACK_IMPORTED_MODULE_4__router__["a" /* default */].push('/amispourlavie/dashboard')
+          __WEBPACK_IMPORTED_MODULE_4__router__["a" /* default */].push('/dashboard')
         })
         .catch(error => console.log(error))
     },
@@ -15871,7 +15870,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
             userId: res.data.localId
           })
           dispatch('setLogoutTimer', res.data.expiresIn)
-          __WEBPACK_IMPORTED_MODULE_4__router__["a" /* default */].push('/amispourlavie/dashboard')
+          __WEBPACK_IMPORTED_MODULE_4__router__["a" /* default */].push('/dashboard')
         })
         .catch(error => console.log(error))
     },
@@ -18410,11 +18409,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "cta"
   }, [_c('router-link', {
     attrs: {
-      "to": "/amispourlavie/signup"
+      "to": "/signup"
     }
   }, [_vm._v("Sign Up")]), _vm._v(" "), _c('router-link', {
     attrs: {
-      "to": "/amispourlavie/signin"
+      "to": "/signin"
     }
   }, [_vm._v("Sign In")])], 1)])
 },staticRenderFns: []}
