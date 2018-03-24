@@ -15758,22 +15758,23 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 
 const routes = [
   { path: '/', component: __WEBPACK_IMPORTED_MODULE_3__components_welcome_welcome_vue___default.a },
-  { path: '/signup', component: __WEBPACK_IMPORTED_MODULE_5__components_auth_signup_vue___default.a },
-  { path: '/signin', component: __WEBPACK_IMPORTED_MODULE_6__components_auth_signin_vue___default.a },
+  { path: '/amispourlavie', component: __WEBPACK_IMPORTED_MODULE_3__components_welcome_welcome_vue___default.a },
+  { path: '/amispourlavie/signup', component: __WEBPACK_IMPORTED_MODULE_5__components_auth_signup_vue___default.a },
+  { path: '/amispourlavie/signin', component: __WEBPACK_IMPORTED_MODULE_6__components_auth_signin_vue___default.a },
   {
-    path: '/dashboard',
+    path: '/amispourlavie/dashboard',
     component: __WEBPACK_IMPORTED_MODULE_4__components_dashboard_dashboard_vue___default.a,
     beforeEnter (to, from, next) {
       if (__WEBPACK_IMPORTED_MODULE_2__store__["a" /* default */].state.idToken) {
         next()
       } else {
-        next('/signin')
+        next('/amispourlavie/signin')
       }
     }
   }
 ]
 
-/* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({mode: 'history', routes}));
+/* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({mode: 'hash', routes}));
 
 /***/ }),
 /* 17 */
@@ -15848,6 +15849,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
           localStorage.setItem('expirationDate', expirationDate)
           dispatch('storeUser', authData)
           dispatch('setLogoutTimer', res.data.expiresIn)
+          __WEBPACK_IMPORTED_MODULE_4__router__["a" /* default */].push('/amispourlavie/dashboard')
         })
         .catch(error => console.log(error))
     },
@@ -15869,7 +15871,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
             userId: res.data.localId
           })
           dispatch('setLogoutTimer', res.data.expiresIn)
-          __WEBPACK_IMPORTED_MODULE_4__router__["a" /* default */].push('/dashboard')
+          __WEBPACK_IMPORTED_MODULE_4__router__["a" /* default */].push('/amispourlavie/dashboard')
         })
         .catch(error => console.log(error))
     },
@@ -16744,17 +16746,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "to": "/"
     }
-  }, [_vm._v("Home")])], 1), _vm._v(" "), _c('nav', [_c('ul', [(!_vm.auth) ? _c('li', [_c('router-link', {
+  }, [_vm._v("Amis pour la Vie")])], 1), _vm._v(" "), _c('nav', [_c('ul', [(!_vm.auth) ? _c('li', [_c('router-link', {
     attrs: {
-      "to": "/signup"
+      "to": "/amispourlavie/signup"
     }
   }, [_vm._v("Sign Up")])], 1) : _vm._e(), _vm._v(" "), (!_vm.auth) ? _c('li', [_c('router-link', {
     attrs: {
-      "to": "/signin"
+      "to": "/amispourlavie/signin"
     }
   }, [_vm._v("Sign In")])], 1) : _vm._e(), _vm._v(" "), (_vm.auth) ? _c('li', [_c('router-link', {
     attrs: {
-      "to": "/dashboard"
+      "to": "/amispourlavie/dashboard"
     }
   }, [_vm._v("Dashboard")])], 1) : _vm._e(), _vm._v(" "), (_vm.auth) ? _c('li', [_c('button', {
     staticClass: "logout",
@@ -18404,15 +18406,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "welcome"
     }
-  }, [_c('h1', [_vm._v("Un amis pour la vie")]), _vm._v(" "), _c('p', [_vm._v("Votre chance d'adopter un animal de compagnie")]), _vm._v(" "), _c('div', {
+  }, [_c('h1', [_vm._v("Amis pour la Vie")]), _vm._v(" "), _c('p', [_vm._v("Votre chance d'adopter un animal de compagnie")]), _vm._v(" "), _c('div', {
     staticClass: "cta"
   }, [_c('router-link', {
     attrs: {
-      "to": "/signup"
+      "to": "/amispourlavie/signup"
     }
   }, [_vm._v("Sign Up")]), _vm._v(" "), _c('router-link', {
     attrs: {
-      "to": "/signin"
+      "to": "/amispourlavie/signin"
     }
   }, [_vm._v("Sign In")])], 1)])
 },staticRenderFns: []}
@@ -18491,7 +18493,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "grid-2"
   }, [_c('div', {
     staticClass: "center"
-  }, [_c('h1', [_vm._v("Un amis pour la vie")]), _vm._v(" "), _c('label', {
+  }, [_c('h1', [_vm._v("Amis pour la vie")]), _vm._v(" "), _c('label', {
     attrs: {
       "for": "search"
     }
@@ -18503,7 +18505,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "right"
   }, [_c('img', {
     attrs: {
-      "src": "http://lorempixel.com/400/200/animals"
+      "src": "https://lorempixel.com/400/200/animals"
     }
   })])]), _vm._v(" "), _c('hr')])
 }]}

@@ -2,7 +2,7 @@
 <nav id="dashboard">
   <div class="grid-2">
       <div class="center">
-          <h1>Un amis pour la vie</h1>
+          <h1>Amis pour la vie</h1>
           <label for="search">Rechercher: </label>
           <input name="search"/>
       </div>
