@@ -14,7 +14,7 @@ import router from './router'
 //};
 //firebase.initializeApp(config);
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
@@ -57,7 +57,7 @@ export default new Vuex.Store({
           const expirationDate = new Date(now.getTime() + res.data.expiresIn * 1000)
           localStorage.setItem('token', res.data.idToken)
           localStorage.setItem('userId', res.data.localId)
-          localStorage.setItem('expirationDate', expirationDate)
+          localStorage.setItem('expirationDate', String(expirationDate))
           dispatch('storeUser', authData)
           dispatch('setLogoutTimer', res.data.expiresIn)
           router.push('/dashboard')
@@ -76,7 +76,7 @@ export default new Vuex.Store({
           const expirationDate = new Date(now.getTime() + res.data.expiresIn * 1000)
           localStorage.setItem('token', res.data.idToken)
           localStorage.setItem('userId', res.data.localId)
-          localStorage.setItem('expirationDate', expirationDate)
+          localStorage.setItem('expirationDate', String(expirationDate))
           commit('authUser', {
             token: res.data.idToken,
             userId: res.data.localId
@@ -93,7 +93,7 @@ export default new Vuex.Store({
       }
       const expirationDate = localStorage.getItem('expirationDate')
       const now = new Date()
-      if (now >= expirationDate) {
+      if (now >= new Date(expirationDate)) {
         return
       }
       const userId = localStorage.getItem('userId')
@@ -145,4 +145,4 @@ export default new Vuex.Store({
       return state.idToken !== null
     }
   }
-})
+});

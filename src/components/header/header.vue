@@ -22,16 +22,16 @@
   </header>
 </template>
 
-<script>
+<script  lang="ts">
   export default {
     computed: {
-      auth () {
-        return this.$store.getters.isAuthenticated
+      auth: function() {
+        return this.$store.getters.isAuthenticated;
       }
     },
     methods: {
-      onLogout() {
-        this.$store.dispatch('logout')
+      onLogou: function() {
+        this.$store.dispatch('logout');
       }
     }
   }

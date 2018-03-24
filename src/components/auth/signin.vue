@@ -14,16 +14,17 @@
     </form>
 </template>
 
-<script>
+<script lang="ts">
+
   export default {
-    data () {
+    data: function() {
       return {
         email: '',
         password: ''
       }
     },
     methods: {
-      onSubmit () {
+      onSubmit:function() {
         const formData = {
           email: this.email,
           password: this.password,

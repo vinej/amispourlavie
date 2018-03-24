@@ -13,16 +13,15 @@ const routes = [
   { path: '/signup', component: SignupPage },
   { path: '/signin', component: SigninPage },
   {
-    path: '/dashboard',
-    component: DashboardPage,
-    beforeEnter (to, from, next) {
-      if (store.state.idToken) {
-        next()
-      } else {
-        next('/amispourlavie/signin')
-      }
-    }
+    path: '/dashboard', component: DashboardPage
+    //beforeEnter: function(to, from, next) {
+    //  if (store.state.idToken) {
+    //    next();
+    //  } else {
+    //    next('/signin');
+    //  }
+    //}
   }
-]
+];
 
-export default new VueRouter({mode: 'hash', routes})
+export default new VueRouter( { routes })

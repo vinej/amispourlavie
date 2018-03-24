@@ -14,17 +14,17 @@
 </nav>
 </template>
 
-<script>
+<script  lang="ts">
   import axios from 'axios';
 
   export default {
     computed: {
-      email () {
-        return !this.$store.getters.user ? false : this.$store.getters.user.email
+      email: function() {
+        return !this.$store.getters.user ? false : this.$store.getters.user.email;
       }
     },
-    created () {
-      this.$store.dispatch('fetchUser')
+    created: function() {
+      this.$store.dispatch('fetchUser');
     }
   }
 </script>

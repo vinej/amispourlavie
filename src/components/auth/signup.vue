@@ -83,10 +83,10 @@
   </div>
 </template>
 
-<script>
-  import { required, email, numeric, minValue, minLength, sameAs, requiredUnless } from 'vuelidate/lib/validators'
+<script lang="ts">
+  import { required, email, numeric, minValue, minLength, sameAs, requiredUnless } from 'vuelidate/lib/validators';
   export default {
-    data () {
+    data: function() {
       return {
         email: '',
         age: null,
@@ -114,12 +114,12 @@
       confirmPassword: {
 //        sameAs: sameAs('password')
         sameAs: sameAs(vm => {
-          return vm.password
+          return vm.password;
         })
       },
       terms: {
         required: requiredUnless(vm => {
-          return vm.country === 'germany'
+          return vm.country === 'germany';
         })
       },
       hobbyInputs: {
@@ -134,17 +134,17 @@
       }
     },
     methods: {
-      onAddHobby () {
+      onAddHobby: function() {
         const newHobby = {
           id: Math.random() * Math.random() * 1000,
           value: ''
         }
-        this.hobbyInputs.push(newHobby)
+        this.hobbyInputs.push(newHobby);
       },
-      onDeleteHobby (id) {
-        this.hobbyInputs = this.hobbyInputs.filter(hobby => hobby.id !== id)
+      onDeleteHobby: function(id) {
+        this.hobbyInputs = this.hobbyInputs.filter(hobby => hobby.id !== id);
       },
-      onSubmit () {
+      onSubmit: function() {
         const formData = {
           email: this.email,
           age: this.age,
@@ -154,8 +154,8 @@
           hobbies: this.hobbyInputs.map(hobby => hobby.value),
           terms: this.terms
         }
-        console.log(formData)
-        this.$store.dispatch('signup', formData)
+        console.log(formData);
+        this.$store.dispatch('signup', formData);
       }
     }
   }
