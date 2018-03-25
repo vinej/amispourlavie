@@ -1,17 +1,16 @@
 <template>
-<div class="pure-g">
-    <div v-for="n in 2" :key="n" class="card pure-u-1">
+<div>
+    <div v-for="n in 2" :key="n" class="card">
         <div>
+            <img src="http://lorempixel.com/300/300/cats" class="card-img"/>
+        </div>
+        <div class="card-text">
             <div>Name: Alfred</div>
             <div>Race: Chat allemand</div>
             <div>Age: 4 ans</div>
             <div>Prix: 2000$</div>
             <div>Desc: Amical qui aime les enfants. Aime sortir dehors tous les jours</div>
-            <button class="button-success">Adopter</button>
-        </div>
-        <br>
-        <div>
-            <img src="http://lorempixel.com/300/300/cats"/>
+            <button class="button-success card-button">Adopter</button>
         </div>
     </div>
 </div>
@@ -25,14 +24,27 @@ export default Vue.extend({
 </script>
 
 <style>
- .card {
-     padding: 1rem;
-     background-color:seashell;
-     margin: 1rem;
-     border-style: solid;
-     border: skyblue;
- }
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    border: 2px solid green;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+    width: 100%
+}
+
+.card-button {
+    margin-top: 1rem;
+    width: 5rem
+}
+
 </style>
-
-
-

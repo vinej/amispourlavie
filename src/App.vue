@@ -1,7 +1,15 @@
 <template>
   <div id="app">
-    <app-header />
-    <router-view></router-view>
+    <div>
+      <app-header></app-header>
+    </div>
+    <aside>
+    </aside>
+    <main>  
+      <router-view></router-view>
+    </main>
+    <footer>
+    </footer>
   </div>
 </template>
 
@@ -19,6 +27,44 @@
 </script>
 
 <style>
+.container {
+    display: grid;    
+}
+header {
+    display: flex;
+    grid-column: span 12;
+    background-color:forestgreen;;
+    height: 4rem;
+}
+
+header > div:nth-child(2) {
+    margin-left: auto;
+}
+
+aside {
+    grid-column: span 2;
+}
+main {
+    grid-column: span 10;
+}
+footer {
+    grid-column: span 12;
+}
+
+a:link, a:visited {
+    background-color:ghostwhite;
+    color: black;
+    margin : 0.5rem;
+    padding: 0.5rem;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color:lightgreen;
+}
+
 .button-success,
 .button-error,
 .button-warning,
@@ -44,8 +90,21 @@
     background: rgb(66, 184, 221); /* this is a light blue */
 }
 
-body {
-  font-size: 24pt;
+.button-xsmall {
+    font-size: 70%;
 }
+
+.button-small {
+    font-size: 85%;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.button-xlarge {
+    font-size: 125%;
+}
+
 </style>
 

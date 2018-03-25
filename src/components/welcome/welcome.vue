@@ -1,9 +1,10 @@
 <template>
-<div style="margin:10px">
-  <img src="/chien-japonais.jpg" height="100" width="300"/>
+<div class="welcome">
   <h1>Amis pour la vie</h1>
-  <label for="search">Rechercher: </label>
+  <form class="pure-form">
+  <label>Rechercher: </label>
   <input name="search"/>
+  </form>
   <hr>
   <app-pets></app-pets>
 </div>
@@ -21,4 +22,11 @@
     }
   }
 </script>
+
+<style>
+.welcome {
+  margin: 1rem;
+}
+</style>
+
 
