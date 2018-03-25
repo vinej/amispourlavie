@@ -35,7 +35,7 @@ header {
     grid-column: span 12;
     background-color: lightgrey;
     border: 2px solid green;
-    height: 3rem;
+    height: 4rem;
 }
 
 header > div:nth-child(2) {
@@ -105,6 +105,10 @@ a:hover, a:active {
 
 .button-xlarge {
     font-size: 125%;
+}
+
+body {
+    font-size: 24pt;
 }
 
 </style>

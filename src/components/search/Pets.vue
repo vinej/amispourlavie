@@ -44,7 +44,7 @@ export default Vue.extend({
 
 .card-button {
     margin-top: 1rem;
-    width: 5rem
+    width: 10rem
 }
 
 </style>
