@@ -107,7 +107,7 @@ export default new Vuex.Store({
       localStorage.removeItem('expirationDate')
       localStorage.removeItem('token')
       localStorage.removeItem('userId')
-      router.replace('/signin')
+      router.push('/')
     },
     storeUser ({commit, state}, userData) {
       if (!state.idToken) {
