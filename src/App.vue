@@ -35,7 +35,7 @@ header {
     grid-column: span 12;
     background-color: lightgrey;
     border: 2px solid green;
-    height: 4rem;
+    height: 4.4rem;
 }
 
 header > div:nth-child(2) {
