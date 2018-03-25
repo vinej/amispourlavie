@@ -60,7 +60,7 @@ export default new Vuex.Store({
           localStorage.setItem('expirationDate', String(expirationDate))
           dispatch('storeUser', authData)
           dispatch('setLogoutTimer', res.data.expiresIn)
-          router.push('/dashboard')
+          router.push('/')
         })
         .catch(error => console.log(error))
     },
@@ -82,7 +82,7 @@ export default new Vuex.Store({
             userId: res.data.localId
           })
           dispatch('setLogoutTimer', res.data.expiresIn)
-          router.push('/dashboard')
+          router.push('/')
         })
         .catch(error => console.log(error))
     },
