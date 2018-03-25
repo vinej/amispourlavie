@@ -33,8 +33,9 @@
 header {
     display: flex;
     grid-column: span 12;
-    background-color:forestgreen;;
-    height: 4rem;
+    background-color: lightgrey;
+    border: 2px solid green;
+    height: 3rem;
 }
 
 header > div:nth-child(2) {
@@ -52,7 +53,7 @@ footer {
 }
 
 a:link, a:visited {
-    background-color:ghostwhite;
+    background-color: transparent;
     color: black;
     margin : 0.5rem;
     padding: 0.5rem;
@@ -62,7 +63,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    background-color:lightgreen;
+    background-color:whitesmoke;
 }
 
 .button-success,
