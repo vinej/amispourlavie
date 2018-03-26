@@ -6,7 +6,7 @@
     <div v-if="auth">
       <ul class="pure-menu-list">
           <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-              <a href="#" id="menuLink1" class="pure-menu-link">Dashboard</a>
+              <a href="#" id="menuLink1" class="pure-menu-link">Aller</a>
               <ul class="pure-menu-children">
                   <li class="pure-menu-item"><a href="#" class="pure-menu-link">Mes annonces</a></li>
                   <li class="pure-menu-item"><a href="#" class="pure-menu-link">Mon panier</a></li>
