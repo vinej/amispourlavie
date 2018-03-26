@@ -1,7 +1,7 @@
 <template>
   <header  class="pure-menu pure-menu-horizontal">
     <div class="logo">
-      <router-link to="/">Home</router-link>
+      <router-link to="/"><i class="fa fa-home"></i></router-link>
     </div>
     <div v-if="auth">
       <ul class="pure-menu-list">
@@ -16,13 +16,29 @@
       </ul>
     </div>
     <div v-if="!auth">
-      <router-link to="/signup">Sign Up</router-link>
+      <div class="tooltip">
+        <router-link to="/signup"><span class="tooltiptext">Joindre le site</span><i class="fa fa-registered"></i>  </router-link>
+      </div>
     </div>
     <div v-if="!auth">
-      <router-link to="/signin">Sign In</router-link>
+      <div class="tooltip">
+        <router-link to="/signin"><span class="tooltiptext">Se connecter</span><i class="fa fa-sign-in"></i> </router-link>
+      </div>
     </div>
     <div v-if="auth">
-      <a href="3"  @click="onLogout">Logout</a>
+      <div class="tooltip">
+        <router-link to="/share"><span class="tooltiptext">Partager</span><i class="fa fa-cloud"></i></router-link>
+    </div>
+    </div>
+    <div v-if="auth">
+      <div class="tooltip">
+        <router-link to="/basket"><span class="tooltiptext">Aller au panier</span><i class="fa fa-cart-plus"></i></router-link>
+      </div> 
+    </div>
+    <div v-if="auth">
+      <div class="tooltip">
+        <a href="3"  @click="onLogout"><span class="tooltiptext">Se déconnecter</span><i class="fa fa-sign-out"></i></a>
+      </div> 
     </div>
   </header>
 </template>
