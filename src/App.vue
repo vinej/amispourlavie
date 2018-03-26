@@ -36,7 +36,7 @@ header {
     display: flex;
     flex : 1;
     grid-column: span 12;
-    height: 3rem;
+    height: 4rem;
     border-bottom: 1px solid black;
 }
 
@@ -113,6 +113,10 @@ body {
     background: linear-gradient(lightslategray,rgb(152, 176, 207));
 }
 
+.pure-menu-list {
+    margin-top:0.3rem;
+}
+
 .pure-menu-link {
     background-color: lightslategray !important;
     color:white !important;
@@ -150,8 +154,8 @@ body {
 }
 
 .tooltip .tooltiptext {
-    top: +50px;
-    right: 10px;
+    top: +55px;
+    right: 8px;
 } 
 
 </style>

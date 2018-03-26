@@ -1,7 +1,7 @@
 <template>
   <header  class="pure-menu pure-menu-horizontal">
     <div class="logo">
-      <router-link to="/"><i class="fa fa-home"></i></router-link>
+      <router-link to="/"><i class="material-icons">home</i></router-link>
     </div>
     <div v-if="auth">
       <ul class="pure-menu-list">
@@ -17,27 +17,32 @@
     </div>
     <div v-if="!auth">
       <div class="tooltip">
-        <router-link to="/signup"><span class="tooltiptext">Joindre le site</span><i class="fa fa-registered"></i></router-link>
+        <router-link to="/signup"><span class="tooltiptext">Joindre le site</span><i class="material-icons">phonelink</i></router-link>
       </div>
     </div>
     <div v-if="!auth">
       <div class="tooltip">
-        <router-link to="/signin"><span class="tooltiptext">Se connecter</span><i class="fa fa-sign-in"></i></router-link>
+        <router-link to="/signin"><span class="tooltiptext">Se connecter</span><i class="material-icons">people</i></router-link>
       </div>
     </div>
     <div v-if="auth">
       <div class="tooltip">
-        <router-link to="/share"><span class="tooltiptext">Partager</span><i class="fa fa-cloud"></i></router-link>
+        <router-link to="/notification"><span class="tooltiptext">Notification</span><i class="material-icons">notifications</i></router-link>
+      </div>
+    </div>
+    <div v-if="auth">
+      <div class="tooltip">
+        <router-link to="/share"><span class="tooltiptext">Partager</span><i class="material-icons">share</i></router-link>
     </div>
     </div>
     <div v-if="auth">
       <div class="tooltip">
-        <router-link to="/basket"><span class="tooltiptext">Aller au panier</span><i class="fa fa-cart-plus"></i></router-link>
+        <router-link to="/basket"><span class="tooltiptext">Aller au panier</span><i class="material-icons">shopping_basket</i></router-link>
       </div> 
     </div>
     <div v-if="auth">
       <div class="tooltip">
-        <a href="3"  @click="onLogout"><span class="tooltiptext">Se déconnecter</span><i class="fa fa-sign-out"></i></a>
+        <a href="3"  @click="onLogout"><span class="tooltiptext">Se déconnecter</span><i class="material-icons">eject</i></a>
       </div> 
     </div>
   </header>
