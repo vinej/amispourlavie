@@ -33,10 +33,8 @@
 header {
     display: flex;
     grid-column: span 12;
-    background-color:darkslategrey;
     height: 3rem;
-    border: 1px solid grey;
-    background: linear-gradient(darkgrey,gray);
+    border-bottom: 1px solid black;
 }
 
 header > div:nth-child(2) {
@@ -64,7 +62,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    background-color:whitesmoke;
+    background-color:rgb(165, 184, 206);
 }
 
 .button-success,
@@ -109,8 +107,7 @@ a:hover, a:active {
 }
 
 body {
-    background-color:lightslategray;
-    background: linear-gradient(lightslategray,gray);
+    background: linear-gradient(lightslategray,rgb(152, 176, 207));
 }
 </style>
 

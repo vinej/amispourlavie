@@ -27,7 +27,7 @@
 
 <style>
 .welcome {
-  margin: 1rem;
+  margin: 0.4rem;
 }
 
 .welcome-text {
