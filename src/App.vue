@@ -35,6 +35,7 @@
 header {
     display: flex;
     flex : 1;
+    background-color:cadetblue;
     grid-column: span 12;
     height: 4rem;
     border-bottom: 1px solid black;
@@ -55,8 +56,8 @@ footer {
 }
 
 a:link, a:visited {
-    background-color: transparent;
-    color: white;
+    background-color:transparent;
+    color: black;
     margin : 0.5rem;
     padding: 0.5rem;
     text-align: center; 
@@ -65,7 +66,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    background-color:rgb(165, 184, 206) !important;
+    background-color:lightblue;
 }
 
 .button-success,
@@ -109,23 +110,6 @@ a:hover, a:active {
     font-size: 125%;
 }
 
-body {
-    background: linear-gradient(lightslategray,rgb(152, 176, 207));
-}
-
-.pure-menu-list {
-    margin-top:0.3rem;
-}
-
-.pure-menu-link {
-    background-color: lightslategray !important;
-    color:white !important;
-}
-
-.pure-menu-children {
-    background-color: lightslategray !important;
-}
-
 /* Tooltip container */
 .tooltip {
     position: relative;
@@ -137,7 +121,7 @@ body {
     visibility: hidden;
     width: 120px;
     background-color: black;
-    color: #fff;
+    color: whitesmoke;
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
