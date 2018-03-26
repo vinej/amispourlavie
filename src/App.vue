@@ -36,7 +36,7 @@ header {
     display: flex;
     flex : 1;
     grid-column: span 12;
-    height: 4rem;
+    height: 3.8rem;
     border-bottom: 1px solid black;
 }
 
