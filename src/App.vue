@@ -33,9 +33,10 @@
 header {
     display: flex;
     grid-column: span 12;
-    background-color:rgba(240, 248, 255, 0.466);
+    background-color:darkslategrey;
     height: 3rem;
     border: 1px solid grey;
+    background: linear-gradient(darkgrey,gray);
 }
 
 header > div:nth-child(2) {
@@ -54,7 +55,7 @@ footer {
 
 a:link, a:visited {
     background-color: transparent;
-    color: black;
+    color: white;
     margin : 0.5rem;
     padding: 0.5rem;
     text-align: center; 
@@ -107,5 +108,9 @@ a:hover, a:active {
     font-size: 125%;
 }
 
+body {
+    background-color:lightslategray;
+    background: linear-gradient(lightslategray,gray);
+}
 </style>
 
