@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import axios from './axios-auth'
 import globalAxios from 'axios'
 import router from './router'
-import "babel-polyfill";
+//import "babel-polyfill";
 
 //var config = {
 //  apiKey: "AIzaSyBBx9OfBXsvfAmN6subo6uo2AF81ud34-k",
