@@ -36,7 +36,7 @@ header {
     display: flex;
     flex : 1;
     grid-column: span 12;
-    height: 3.8rem;
+    height: 4rem;
     border-bottom: 1px solid black;
 }
 
@@ -130,7 +130,6 @@ body {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */

@@ -22,7 +22,7 @@
     </div>
     <div v-if="!auth">
       <div class="tooltip">
-        <router-link to="/signin"><span class="tooltiptext">Se connecter</span><i class="material-icons">people</i></router-link>
+        <router-link to="/signin"><i class="material-icons">people</i><span class="tooltiptext">Se connecter</span></router-link>
       </div>
     </div>
     <div v-if="auth">
