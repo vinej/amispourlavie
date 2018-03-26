@@ -1,11 +1,13 @@
 <template>
 <div class="welcome">
-  <h1>Amis pour la vie</h1>
+  <div class="welcome-text">
+  <h1>Amis pour la Vie</h1>
   <form class="pure-form">
   <label>Rechercher: </label>
   <input name="search"/>
   </form>
   <hr>
+  </div>
   <app-pets></app-pets>
 </div>
 </template>
@@ -26,6 +28,10 @@
 <style>
 .welcome {
   margin: 1rem;
+}
+
+.welcome-text {
+  margin-left: 0.5rem;
 }
 </style>
 

@@ -32,11 +32,13 @@ export default Vue.extend({
 .card {
     display: flex;
     flex-direction: row;
-    background-color: lightgrey;
-    border: 2px solid green;
-    padding: 1rem;
-    margin: 1rem;
+    background-color: white;
+    border-radius: 0.3rem;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    margin: 0.5rem;
     width: 20rem;
+    box-shadow: 0.1rem 0.1rem grey;
 }
 
 .card-text {

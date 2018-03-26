@@ -33,9 +33,9 @@
 header {
     display: flex;
     grid-column: span 12;
-    background-color: lightgrey;
-    border: 2px solid green;
-    height: 4rem;
+    background-color:rgba(240, 248, 255, 0.466);
+    height: 3rem;
+    border: 1px solid grey;
 }
 
 header > div:nth-child(2) {

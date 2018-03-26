@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="logo">
-      <router-link to="/">Amis&nbsp;pour la&nbsp;Vie</router-link>
+      <router-link to="/">Home</router-link>
     </div>
     <div v-if="!auth">
       <router-link to="/signup">Sign Up</router-link>
