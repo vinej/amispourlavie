@@ -1,6 +1,6 @@
 <template>
-<div>
-    <div v-for="n in 2" :key="n" class="card">
+<div class="container-flex">
+    <div v-for="n in 5" :key="n" class="card">
         <div>
             <img src="http://lorempixel.com/300/300/cats" class="card-img"/>
         </div>
@@ -24,6 +24,11 @@ export default Vue.extend({
 </script>
 
 <style>
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+
+}
 .card {
     display: flex;
     flex-direction: row;
@@ -31,11 +36,13 @@ export default Vue.extend({
     border: 2px solid green;
     padding: 1rem;
     margin: 1rem;
+    width: 20rem;
 }
 
 .card-text {
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
 }
 
 .card-img {
