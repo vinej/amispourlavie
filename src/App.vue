@@ -141,7 +141,7 @@ body {
  
     /* Position the tooltip text - see examples below! */
     position: absolute;
-     z-index: 1;
+     z-index: 1;  
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
