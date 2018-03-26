@@ -17,12 +17,12 @@
     </div>
     <div v-if="!auth">
       <div class="tooltip">
-        <router-link to="/signup"><span class="tooltiptext">Joindre le site</span><i class="fa fa-registered"></i>  </router-link>
+        <router-link to="/signup"><span class="tooltiptext">Joindre le site</span><i class="fa fa-registered"></i></router-link>
       </div>
     </div>
     <div v-if="!auth">
       <div class="tooltip">
-        <router-link to="/signin"><span class="tooltiptext">Se connecter</span><i class="fa fa-sign-in"></i> </router-link>
+        <router-link to="/signin"><span class="tooltiptext">Se connecter</span><i class="fa fa-sign-in"></i></router-link>
       </div>
     </div>
     <div v-if="auth">
