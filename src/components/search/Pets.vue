@@ -29,10 +29,11 @@ export default Vue.extend({
     flex-wrap: wrap;
 }
 
-.child { align-self: stretch; }
+.child { 
+    align-self: stretch; 
+}
 
 .card {
-
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -40,15 +41,15 @@ export default Vue.extend({
     border: 1px solid grey;
     padding: 0.5rem;
     margin: 0.5rem;
-    width: 20rem;
     box-shadow: 0.1rem 0.1rem grey;
 }
 
 .card-text {
-  display: flex;
-  flex-basis: 100%;
-  flex-direction: column;
-  margin-left: 1rem;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    margin-left: 1rem;
+    font-size: 0.9rem;
 }
 
 .card-img {
@@ -57,7 +58,6 @@ export default Vue.extend({
 
 .card-button {
     margin-top: 1rem;
-    width: 9rem
+    width: 8rem
 }
-
 </style>

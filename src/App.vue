@@ -28,11 +28,10 @@
 </script>
 
 <style>
-.child { width: 100%; }
-
 .container {
     display: grid;    
 }
+
 header {
     display: flex;
     flex : 1;
@@ -66,7 +65,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    background-color:rgb(165, 184, 206);
+    background-color:rgb(165, 184, 206) !important;
 }
 
 .button-success,
@@ -113,5 +112,15 @@ a:hover, a:active {
 body {
     background: linear-gradient(lightslategray,rgb(152, 176, 207));
 }
+
+.pure-menu-link {
+    background-color: lightslategray !important;
+    color:white !important;
+}
+
+.pure-menu-children {
+    background-color: lightslategray !important;
+}
+
 </style>
 

@@ -1,10 +1,26 @@
 <template>
 <div class="welcome">
-  <div class="welcome-text">
+  <div>
+  <form class="pure-form welcome-text">
   <h1>Amis pour la Vie</h1>
-  <form class="pure-form">
-  <label>Rechercher: </label>
-  <input name="search"/>
+  <div>
+    <label>Rechercher: </label>
+  </div>
+  <div>
+    <input name="search"/>
+  </div>
+  <div class="welcome-space">
+    <label>Catétogies:</label>
+  </div>
+  <div>
+    <select id="state">
+        <option>Animaux</option>
+        <option>Articles</option>
+        <option>Soin des animaux</option>
+        <option>Magasins</option>
+        <option>Toute les catégories</option>
+    </select>
+  </div>
   </form>
   <hr>
   </div>
@@ -32,7 +48,15 @@
 
 .welcome-text {
   margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
+
+.welcome-space {
+  padding-top :0.2rem;
+}
+
 </style>
 
 
