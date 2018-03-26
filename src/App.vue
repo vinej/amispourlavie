@@ -14,6 +14,7 @@
 </template>
 
 <script>
+
   import Header from './components/header/header.vue';
   export default {
     name: 'app',
@@ -27,11 +28,14 @@
 </script>
 
 <style>
+.child { width: 100%; }
+
 .container {
     display: grid;    
 }
 header {
     display: flex;
+    flex : 1;
     grid-column: span 12;
     height: 3rem;
     border-bottom: 1px solid black;

@@ -6,6 +6,7 @@ import Vuelidate from 'vuelidate'
 import VueRouter from 'vue-router'
 import router from './router'
 import store from './store'
+import "babel-polyfill";
 
 Vue.use(Vuelidate);
 Vue.use(VueRouter);

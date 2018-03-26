@@ -27,9 +27,12 @@ export default Vue.extend({
 .container-flex {
     display: flex;
     flex-wrap: wrap;
-
 }
+
+.child { align-self: stretch; }
+
 .card {
+
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -43,6 +46,7 @@ export default Vue.extend({
 
 .card-text {
   display: flex;
+  flex-basis: 100%;
   flex-direction: column;
   margin-left: 1rem;
 }
@@ -53,7 +57,7 @@ export default Vue.extend({
 
 .card-button {
     margin-top: 1rem;
-    width: 10rem
+    width: 9rem
 }
 
 </style>
