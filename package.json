@@ -1,5 +1,5 @@
 {
-  "name": "typescript-vue-starter",
+  "name": "amis-pour-la-vie",
   "version": "1.0.0",
   "private": true,
   "description": "",
@@ -13,7 +13,7 @@
   "keywords": [],
   "author": {
     "name": "jyv",
-    "url": "https://github.com/vinej"
+    "url": "https://github.com/vinej/amispourlavie"
   },
   "license": "MIT",
   "dependencies": {
