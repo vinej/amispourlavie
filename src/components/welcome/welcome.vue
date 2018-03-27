@@ -12,7 +12,7 @@
           <option>Laval</option>
           <option>Quebec</option>
           <option>Sherbrooke</option>
-          <option>Toute les régions</option>
+          <option>Toutes les régions</option>
       </select>
     </div>
     <div class="welcome-space">
