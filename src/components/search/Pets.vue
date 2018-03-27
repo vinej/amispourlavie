@@ -42,6 +42,7 @@ export default Vue.extend({
     padding: 0.5rem;
     margin: 0.5rem;
     box-shadow: 0.1rem 0.1rem grey;
+    max-width: 360px;
 }
 
 .card-text {
