@@ -3,35 +3,48 @@
   <div class="welcome-header">
     <form class="pure-form welcome-text">
     <h1>Amis pour la Vie</h1>
+    <div class="welcome-space">
+      <label>Régions:</label>
+    </div>
     <div>
+      <select id="state">
+          <option>Montréal</option>
+          <option>Laval</option>
+          <option>Quebec</option>
+          <option>Sherbrooke</option>
+          <option>Toute les régions</option>
+      </select>
+    </div>
+    <div class="welcome-space">
       <label>Rechercher: </label>
     </div>
     <div>
       <input name="search"/>
-    </div>
-    <div class="welcome-space">
-      <label>Catétogies:</label>
-    </div>
-    <div>
-      <select id="state">
-          <option>Animaux</option>
-          <option>Articles</option>
-          <option>Soin des animaux</option>
-          <option>Magasins</option>
-          <option>Toute les catégories</option>
-      </select>
+      <button @click.prevent="isSearch = true" class="pure-button">Recherche</button>
     </div>
     </form>
     <hr>
   </div>
-  <app-pets></app-pets>
+  <div v-if="cSearch">
+    <app-pets></app-pets>
+  </div>
 </div>
 </template>
 
 <script>
   import Pets from '../../components/search/pets.vue';
   export default {
-    name: 'welcome',
+    data: function() {
+      return {
+        name: 'welcome',
+        isSearch: false
+      }
+    },
+    computed: {
+      cSearch : function() {
+        return this.isSearch;
+      }
+    },
     components: {
       'app-pets': Pets
     },
