@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import VueRouter from 'vue-router'
 import axios from './axios-auth'
 import globalAxios from 'axios'
 import router from './router'
+import createLogger from 'vuex/dist/logger'
 //import "babel-polyfill";
 
 //var config = {
@@ -16,6 +18,7 @@ import router from './router'
 //firebase.initializeApp(config);
 
 Vue.use(Vuex);
+Vue.use(VueRouter);
 
 export default new Vuex.Store({
   state: {
@@ -108,7 +111,7 @@ export default new Vuex.Store({
       localStorage.removeItem('expirationDate')
       localStorage.removeItem('token')
       localStorage.removeItem('userId')
-      router.push('/')
+      router.replace('/signin')
     },
     storeUser ({commit, state}, userData) {
       if (!state.idToken) {

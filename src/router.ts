@@ -6,8 +6,6 @@ import DashboardPage from './components/dashboard/dashboard.vue'
 import SignupPage from './components/auth/signup.vue'
 import SigninPage from './components/auth/signin.vue'
 
-Vue.use(VueRouter)
-
 const routes = [
   { path: '/', component: WelcomePage },
   { path: '/signup', component: SignupPage },

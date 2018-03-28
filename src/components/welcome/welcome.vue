@@ -20,12 +20,12 @@
     </div>
     <div>
       <input name="search"/>
-      <button @click.prevent="isSearch = true" class="pure-button">Recherche</button>
+      <button @click.prevent="search = true" class="pure-button">Recherche</button>
     </div>
     </form>
     <hr>
   </div>
-  <div v-if="cSearch">
+  <div v-if="search">
     <app-pets></app-pets>
   </div>
 </div>
@@ -37,12 +37,7 @@
     data: function() {
       return {
         name: 'welcome',
-        isSearch: false
-      }
-    },
-    computed: {
-      cSearch : function() {
-        return this.isSearch;
+        search: false
       }
     },
     components: {

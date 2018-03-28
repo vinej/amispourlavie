@@ -10,7 +10,6 @@ import store from './store'
 
 Vue.use(Vuelidate);
 Vue.use(VueRouter);
-Vue.use(Vuex);
 
 axios.defaults.baseURL = 'https://amis-pour-la-vie.firebaseio.com/';
 // axios.defaults.headers.common['Authorization'] = 'fasfdsa'

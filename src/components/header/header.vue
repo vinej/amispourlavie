@@ -42,7 +42,7 @@
     </div>
     <div v-if="auth">
       <div class="tooltip">
-        <a href="3"  @click="onLogout"><span class="tooltiptext">Se déconnecter</span><i class="material-icons">eject</i></a>
+        <a href="#" @click.prevent="onLogout"><span class="tooltiptext">Se déconnecter</span><i class="material-icons">eject</i></a>
       </div> 
     </div>
   </header>
