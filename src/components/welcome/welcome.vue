@@ -44,7 +44,7 @@
       'app-pets': Pets
     },
     created: function() {
-      this.$store.dispatch('tryAutoLogin');
+      this.$store.dispatch('user/tryAutoLogin');
     }
   }
 </script>

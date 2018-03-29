@@ -3,6 +3,7 @@ import Ads from "./ads"
 export default class Owner {
     // user profile
     email: string = "";
+    password: string = "";
     name: string = "";
     cie : string = "";
     address: string = "";
@@ -10,5 +11,5 @@ export default class Owner {
     state: string = "";
     phone: string = "";
     mobile: string;
-    myads : Ads[];
+    ads : Ads[];
 }

@@ -2,7 +2,7 @@ import PetsType from "./petstype";
 import Owner from "./owner"
 
 export default class Pet {
-    owner: Owner;
+    email: string;
     name: string;
     breed: string;
     age: number;

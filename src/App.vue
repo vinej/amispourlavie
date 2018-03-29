@@ -22,7 +22,7 @@
       'app-header': Header
     },
     created: function() {
-      this.$store.dispatch('tryAutoLogin');
+      this.$store.dispatch('user/tryAutoLogin');
     }
   }
 </script>

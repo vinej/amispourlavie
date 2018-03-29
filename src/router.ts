@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import store from './store'
+import store from './stores/store'
 import WelcomePage from './components/welcome/welcome.vue'
 import DashboardPage from './components/dashboard/dashboard.vue'
 import SignupPage from './components/auth/signup.vue'
@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/dashboard', component: DashboardPage,
     beforeEnter: function(to, from, next) {
-      if (store.state.idToken) {
+      if (store.getters['user/idToken']) {
         next();
       } else {
         next('/signin');

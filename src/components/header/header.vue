@@ -52,12 +52,12 @@
   export default {
     computed: {
       auth: function() {
-        return this.$store.getters.isAuthenticated;
+        return this.$store.getters['user/isAuthenticated'];
       }
     },
     methods: {
       onLogout: function() {
-        this.$store.dispatch('logout');
+        this.$store.dispatch('user/logout');
       }
     }
   }

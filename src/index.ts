@@ -5,7 +5,7 @@ import axios from 'axios'
 import Vuelidate from 'vuelidate'
 import VueRouter from 'vue-router'
 import router from './router'
-import store from './store'
+import store from './stores/store'
 //import "babel-polyfill";
 
 Vue.use(Vuelidate);

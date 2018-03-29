@@ -2,7 +2,7 @@ import Pet from "./pet"
 import Owner from "./owner"
 
 class Ads {
-    owner: Owner;
+    email: string;
     submit_date: Date;
     price: number;
     pet: Pet; 
