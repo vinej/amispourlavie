@@ -61,13 +61,17 @@ export default Vue.extend({
 }
 
 .card-button {
-    margin-top: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    margin-top: 0.4rem;
     width: 4.7rem
 }
 
 .card-button-short {
-    margin-top: 1rem;
-    width: 2.7rem
+    margin-top: 0.4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: 3rem
 }
 
 </style>
