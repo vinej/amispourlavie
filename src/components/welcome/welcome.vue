@@ -4,7 +4,7 @@
     <div class="flex-one-column">
       <h1>Amis pour la Vie</h1>
       <h5 style="margin-top: -1.4rem">Le site d'adoption d'animaux du Québec</h5>
-      <label for="state">Régions:</label>
+      <label for="state">Région:</label>
       <select id="state">
           <option>Montréal</option>
           <option>Laval</option>
