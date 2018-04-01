@@ -10,10 +10,10 @@
             <div>Age: 4 ans</div>
             <div>Prix: 2000$</div>
             <div>Desc: Amical qui aime les enfants. Aime sortir dehors tous les jours</div>
-            <span>
-            <button class="button-success card-button">Adopter</button>
-            <button class="button-success card-button-short">Info</button>
-            </span>
+            <div>
+                <button class="button-success card-button">Adopter</button>
+                <button class="button-success card-button-short">Info</button>
+            </div>
         </div>
     </div>
 </div>
@@ -62,12 +62,12 @@ export default Vue.extend({
 
 .card-button {
     margin-top: 1rem;
-    width: 5rem
+    width: 4.7rem
 }
 
 .card-button-short {
     margin-top: 1rem;
-    width: 3rem
+    width: 2.7rem
 }
 
 </style>
