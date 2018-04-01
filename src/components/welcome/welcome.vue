@@ -3,6 +3,7 @@
   <form class="pure-form">
     <div class="flex-one-column">
       <h1>Amis pour la Vie</h1>
+      <h5 style="margin-top: -1.4rem">Le site d'adoption d'animaux du Québec</h5>
       <label for="state">Régions:</label>
       <select id="state">
           <option>Montréal</option>
@@ -11,10 +12,10 @@
           <option>Sherbrooke</option>
           <option>Toutes les régions</option>
       </select>
-      <label for="name">Rechercher: </label>
+      <label for="name">Critère de recherche: </label>
       <input id="name" name="search"/>
       <br>
-      <button @click.prevent="search = true" class="pure-button">Recherche</button>
+      <button @click.prevent="search = true" class="pure-button">Rechercher</button>
     </div>
   </form>
   <hr>
