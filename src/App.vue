@@ -110,36 +110,66 @@ a:hover, a:active {
     font-size: 125%;
 }
 
-/* Tooltip container */
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-/* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: whitesmoke;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
- 
-    /* Position the tooltip text - see examples below! */
+    width: 0px;
     position: absolute;
-     z-index: 1;  
+    z-index: 1;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
+@media screen and (min-width: 800px) {
+    /* Tooltip container */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: whitesmoke;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+    
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;  
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    .tooltip .tooltiptext {
+        top: +55px;
+        right: 8px;
+    } 
 }
 
-.tooltip .tooltiptext {
-    top: +55px;
-    right: 8px;
-} 
+/* no tooltip for mobile */
+@media screen and (man-width: 799px) {
+    /* Tooltip container */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
 
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 1px;
+        position: absolute;
+        z-index: 1;  
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+        visibility: hidden;
+    }
+}
 </style>
 
