@@ -1,12 +1,9 @@
 <template>
 <div class="welcome">
-  <div class="welcome-header">
-    <form class="pure-form welcome-text">
-    <h1>Amis pour la Vie</h1>
-    <div class="welcome-space">
-      <label>Régions:</label>
-    </div>
-    <div>
+  <form class="pure-form">
+    <div class="flex-one-column">
+      <h1>Amis pour la Vie</h1>
+      <label for="state">Régions:</label>
       <select id="state">
           <option>Montréal</option>
           <option>Laval</option>
@@ -14,20 +11,14 @@
           <option>Sherbrooke</option>
           <option>Toutes les régions</option>
       </select>
-    </div>
-    <div class="welcome-space">
-      <label>Rechercher: </label>
-    </div>
-    <div>
-      <input name="search"/>
+      <label for="name">Rechercher: </label>
+      <input id="name" name="search"/>
+      <br>
       <button @click.prevent="search = true" class="pure-button">Recherche</button>
     </div>
-    </form>
-    <hr>
-  </div>
-  <div v-if="search">
-    <app-pets></app-pets>
-  </div>
+  </form>
+  <hr>
+  <app-pets v-if="search"></app-pets>
 </div>
 </template>
 
@@ -51,22 +42,17 @@
 
 <style>
 
-.welcome-header {
-  background-color: lightblue;
+.welcome {
+  background-color:rgb(231, 246, 250)
 }
 
-
-.welcome-text {
-  margin-left: 0.5rem;
+.flex-one-column {
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  width: 16rem;
 }
-
-.welcome-space {
-  padding-top :0.2rem;
-}
-
 </style>
 
 
