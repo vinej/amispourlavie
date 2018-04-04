@@ -28,6 +28,7 @@
                   @blur="$v.confirmPassword.$touch()"
                   v-model="confirmPassword">
         </div>
+        <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
         <button class="pure-button pure-button-primary" type="submit">Submit</button>
       </fieldset>
       </form>
