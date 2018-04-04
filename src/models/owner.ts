@@ -1,4 +1,4 @@
-import Ads from "./ads"
+import MyAds from "./myads"
 
 export default class Owner {
     // user profile
@@ -11,5 +11,5 @@ export default class Owner {
     state: string = "";
     phone: string = "";
     mobile: string;
-    ads : Ads[];
+    ads : MyAds[];
 }

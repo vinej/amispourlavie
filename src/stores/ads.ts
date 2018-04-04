@@ -1,12 +1,12 @@
 import globalAxios from 'axios'
 import router from '../router'
-import Ads from '../models/ads'
+import MyAds from '../models/myads'
 
 export default {
     namespaced: true,
 
     state: {
-        adsList : Ads[]
+        adsList : [],
     },
     mutations: {
       authUser (state, userData) {
@@ -51,7 +51,7 @@ export default {
     },
     getters: {
       ads (state) {
-        return state.ads
+        return state.adsList
       }
     }
   }
