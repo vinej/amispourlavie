@@ -28,11 +28,15 @@
                   @blur="$v.confirmPassword.$touch()"
                   v-model="confirmPassword">
         </div>
-        <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
+        <div>
+          <label for="cameraInput">Prendre photo: </label>
+          <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
+        </div>
         <button class="pure-button pure-button-primary" type="submit">Submit</button>
       </fieldset>
       </form>
 </template>
+
 
 <script lang="ts">
   import { required, email, numeric, minValue, minLength, sameAs, requiredUnless } from 'vuelidate/lib/validators';
